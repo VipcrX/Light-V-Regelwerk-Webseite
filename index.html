@@ -30,7 +30,18 @@
 <!-- End of Squarespace Headers -->
     <link rel="stylesheet" type="text/css" href="static.css">
   </head>
-
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+  
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  
   <body
     id="collection-679ba013814a145c5f4c8b05"
     class="
